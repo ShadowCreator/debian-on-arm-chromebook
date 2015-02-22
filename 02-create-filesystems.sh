@@ -2,7 +2,7 @@
 
 # On a Linux workstation
 
-DEV=/dev/sdb
+DEV=/dev/mmcblk0p
 
 set -x
 

@@ -2,7 +2,7 @@
 
 # On a Linux workstation
 
-DEV=/dev/sdb
+DEV=/dev/mmcblk0
 MNT=/mnt
 
 set -x

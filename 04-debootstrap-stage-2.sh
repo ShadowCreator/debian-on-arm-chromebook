@@ -33,8 +33,8 @@ EOF
 # Populate the /etc/apt/sources.list with target = wheezy
 
 cat > ${MNT}/etc/apt/sources.list <<EOF
-deb http://ftp.ca.debian.org/debian wheezy main non-free contrib
-deb-src http://ftp.ca.debian.org/debian wheezy main non-free contrib
+deb http://ftp.au.debian.org/debian sid main non-free contrib
+deb-src http://ftp.au.debian.org/debian sid main non-free contrib
 EOF
 
 # Update the packages
@@ -48,7 +48,7 @@ chroot ${MNT} apt-get upgrade
 # Install useful packages
 chroot ${MNT} apt-get install wpasupplicant iw upower cryptsetup
 
-echo "yourhostname" > ${MNT}/etc/hostname
+echo "liam-samsung" > ${MNT}/etc/hostname
 
 # Set the root password
 chroot ${MNT} passwd

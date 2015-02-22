@@ -2,7 +2,7 @@
 
 # On a Linux workstation
 
-DEV=/dev/sdb
+DEV=/dev/mmcblk0p
 MNT=/mnt
 
 set -x
@@ -10,7 +10,7 @@ set -x
 # mount ROOT (/), and debootstrap into it
 mount ${DEV}4 ${MNT}
 
-debootstrap --arch=armhf --foreign wheezy ${MNT} ftp://ftp.ca.debian.org/debian
+debootstrap --arch=armhf --foreign sid ${MNT} ftp://ftp.au.debian.org/debian/
 
 umount ${MNT}
 
